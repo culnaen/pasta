@@ -131,7 +131,7 @@ Pasta — Go-приложение для обмена текстом и файл
 - [x] `docs: add concise project README`
 - [x] `docs: add project license`
 - [x] `ci: verify Go tests and formatting`
-- [ ] Выполнить полный pre-push scan и итоговые проверки.
+- [x] Выполнить полный pre-push scan и итоговые проверки.
 - [x] Создать private GitHub repository, проверить настройки security scanning,
   затем сделать repository public.
 
