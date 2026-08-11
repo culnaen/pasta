@@ -109,19 +109,19 @@ Pasta — Go-приложение для обмена текстом и файл
 
 ### 6. Качество кода и CI
 
-- [ ] Не добавлять абстракции, генераторы, шаблонные комментарии и тесты без
+- [x] Не добавлять абстракции, генераторы, шаблонные комментарии и тесты без
   наблюдаемого контракта.
-- [ ] Сохранять Go-код отформатированным и запускать:
+- [x] Сохранять Go-код отформатированным и запускать:
   ```sh
   gofmt -w main.go main_test.go
   go test ./...
   go vet ./...
   ```
-- [ ] Добавить минимальный GitHub Actions workflow: `gofmt` check, `go test`,
+- [x] Добавить минимальный GitHub Actions workflow: `gofmt` check, `go test`,
   `go vet` и secret scan.
-- [ ] Запускать workflow с минимальными permissions (`contents: read`).
-- [ ] Подключить Dependabot для Go modules.
-- [ ] Обновления зависимостей, документации, деплоя и функциональности держать
+- [x] Запускать workflow с минимальными permissions (`contents: read`).
+- [x] Подключить Dependabot для Go modules.
+- [x] Обновления зависимостей, документации, деплоя и функциональности держать
   в независимых PR и Conventional Commits.
 
 ## Порядок реализации
@@ -130,7 +130,7 @@ Pasta — Go-приложение для обмена текстом и файл
 - [x] `chore(deploy): remove production-specific compose file`
 - [x] `docs: add concise project README`
 - [x] `docs: add project license`
-- [ ] `ci: verify Go tests and formatting`
+- [x] `ci: verify Go tests and formatting`
 - [ ] Выполнить полный pre-push scan и итоговые проверки.
 - [x] Создать private GitHub repository, проверить настройки security scanning,
   затем сделать repository public.
