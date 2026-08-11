@@ -37,7 +37,7 @@ Pasta — Go-приложение для обмена текстом и файл
 - [x] При находке секрета: не создавать remote, отозвать затронутый credential,
   удалить данные из экспорта и повторить scan. Секреты не обнаружены.
 - [x] Инициализировать новый Git-репозиторий только после успешного scan.
-- [ ] Перед первым push включить GitHub secret scanning и push protection.
+- [x] Перед первым push включить GitHub secret scanning и push protection.
 
 ### 2. Переносимая конфигурация развёртывания
 
@@ -100,11 +100,11 @@ Pasta — Go-приложение для обмена текстом и файл
 
 ### 5. Лицензирование и поддержка
 
-- [ ] Владелец выбирает лицензию до первого public push: MIT или Apache-2.0.
-- [ ] Добавить полный текст выбранной лицензии в `LICENSE`.
+- [x] Владелец выбирает лицензию до первого public push: MIT или Apache-2.0.
+- [x] Добавить полный текст выбранной лицензии в `LICENSE`.
 - [ ] Указать лицензию в README и GitHub repository metadata.
-- [ ] Добавить `SECURITY.md` только при наличии обслуживаемого приватного канала
-  для сообщений об уязвимостях.
+- [x] Добавить `SECURITY.md` только при наличии обслуживаемого приватного канала
+  для сообщений об уязвимостях. Приватный канал отсутствует.
 - [ ] Назначить владельца repository и ответственного за security reports.
 
 ### 6. Качество кода и CI
@@ -129,10 +129,10 @@ Pasta — Go-приложение для обмена текстом и файл
 - [x] `chore(repo): exclude runtime data and local configuration`
 - [x] `chore(deploy): remove production-specific compose file`
 - [x] `docs: add concise project README`
-- [ ] `docs: add project license`
+- [x] `docs: add project license`
 - [ ] `ci: verify Go tests and formatting`
 - [ ] Выполнить полный pre-push scan и итоговые проверки.
-- [ ] Создать private GitHub repository, проверить настройки security scanning,
+- [x] Создать private GitHub repository, проверить настройки security scanning,
   затем сделать repository public.
 
 ## Критерии готовности

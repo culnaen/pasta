@@ -61,3 +61,7 @@ Git or release artifacts. See [backup and restore instructions](deploy/backup-re
 | `PASTA_UPLOAD_TTL` | `1h` | Time allowed to finish an upload. |
 | `PASTA_READ_TIMEOUT` | `2m` | Maximum request read duration. |
 | `PASTA_WRITE_TIMEOUT` | `2m` | Maximum request write duration. |
+
+## License
+
+Pasta is licensed under the [MIT License](LICENSE).
