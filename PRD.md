@@ -26,17 +26,17 @@ Pasta — Go-приложение для обмена текстом и файл
 ### 1. Чистый публичный исходник
 
 - [x] Создана рабочая копия без `.git`.
-- [ ] Убедиться, что новая копия не содержит `.git`, SQLite-баз, WAL/SHM,
+- [x] Убедиться, что новая копия не содержит `.git`, SQLite-баз, WAL/SHM,
   runtime-каталогов, архивов бэкапов, `.env`, TLS-материалов, `graft/`,
   `.claude/`, `.mcp.json` и инструкций, относящихся только к локальному
   агентскому окружению.
-- [ ] Выполнить scan экспортированного дерева:
+- [x] Выполнить scan экспортированного дерева:
   ```sh
   gitleaks detect --source . --redact --no-git
   ```
-- [ ] При находке секрета: не создавать remote, отозвать затронутый credential,
-  удалить данные из экспорта и повторить scan.
-- [ ] Инициализировать новый Git-репозиторий только после успешного scan.
+- [x] При находке секрета: не создавать remote, отозвать затронутый credential,
+  удалить данные из экспорта и повторить scan. Секреты не обнаружены.
+- [x] Инициализировать новый Git-репозиторий только после успешного scan.
 - [ ] Перед первым push включить GitHub secret scanning и push protection.
 
 ### 2. Переносимая конфигурация развёртывания
@@ -126,7 +126,7 @@ Pasta — Go-приложение для обмена текстом и файл
 
 ## Порядок реализации
 
-- [ ] `chore(repo): exclude runtime data and local configuration`
+- [x] `chore(repo): exclude runtime data and local configuration`
 - [x] `chore(deploy): remove production-specific compose file`
 - [x] `docs: add concise project README`
 - [ ] `docs: add project license`
