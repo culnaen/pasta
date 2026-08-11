@@ -1,0 +1,17 @@
+# Runtime data and backups must never enter source control.
+/data/
+/backups/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Local deployment configuration.
+.env
+.env.*
+!.env.example
+
+# Locally built deployment artifact.
+/dist/
+
+# Graft's local graph cache — regenerable, not committed (run `graft build`).
+graft/

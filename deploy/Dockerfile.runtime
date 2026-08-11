@@ -1,0 +1,7 @@
+FROM gcr.io/distroless/static-debian13:nonroot
+COPY --chown=nonroot:nonroot dist/pasta /pasta
+VOLUME ["/data"]
+ENV PASTA_ADDR=:8080 PASTA_DATA_DIR=/data
+EXPOSE 8080
+USER nonroot:nonroot
+ENTRYPOINT ["/pasta"]

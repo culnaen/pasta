@@ -1,0 +1,33 @@
+services:
+  pasta:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    environment:
+      PASTA_ADDR: :8080
+      PASTA_DATA_DIR: /data
+    volumes:
+      - pasta-data:/data
+    expose:
+      - "8080"
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2.10-alpine
+    depends_on:
+      - pasta
+    environment:
+      PASTA_DOMAIN: ${PASTA_DOMAIN:?set PASTA_DOMAIN to the public HTTPS hostname}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    restart: unless-stopped
+
+volumes:
+  pasta-data:
+  caddy-data:
+  caddy-config:
